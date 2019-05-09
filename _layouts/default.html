@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="xixianykus" content="Jekyll Try">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <meta name="created" content="2019-05-09">
-</head>
-
-<body>
-
-<h1>{{ page.title }}</h1>
-
-{{ content }}
-
-</body>
-</html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="https://github.com/xixianykus">github.com/xixianykus</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
